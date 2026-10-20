@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        body {
+            padding: 100px;
+        }
+
+        .wrap {
+            width: 600px;
+            background: #ddd;
+        }
+
+        .wrap::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .box {
+            width: 200px;
+            height: 150px;
+        }
+
+        .box1 {
+            background: pink;
+            float: left;
+        }
+
+        .box2 {
+            background: skyblue;
+            float: left;
+        }
+
+        .footer {
+            background: #222;
+            color: white;
+            padding: 30px;
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+
+</html>
